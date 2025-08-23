@@ -35,7 +35,6 @@ func loadApiConfig(filename string) (apiConfigData, error) {
 func hello(w http.ResponseWriter, r *http.Request) {
 	w.Write([]byte("hello from go!\n"))
 }
-
 func query(city string) (weatherData, error) {
 	apiConfig, err := loadApiConfig(".apiconfig")
 	if err != nil {
